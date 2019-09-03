@@ -1,0 +1,68 @@
+ 前端三大框架：angularJs、Vue（容易）、react（难）、
+ 后台三大框架：SSM、SSH
+               SSM（最近流行）：spring  springMVC
+               Mybatic
+   
+
+
+学习过程：云服务器（linux）
+          HTML5
+          CSS3
+          JavaScript
+          jQuery
+BootStrap
+          HTML5API    H5小游戏 WEbGL  C#
+          ES6  *  
+          React    /Vue  /AngularJS
+          React生态圈（react之上的框架：Ant  design ）  /Vue生态圈 /angularJS生态圈
+          NodeJS   
+          React-native   /weex
+          微信小程序    微信小程序框架
+          
+
+        前后端代码分离技术：servlet+JSP  后端提供接口，前端提供Ajax  前端基于HTTP协议向后台发送数据交互请求，后台接收请求后进行响应。
+        后台访问数据库工具：Oracle   MySQl   SQL Server   mongodb    
+    
+        取之能用的网页：  https://preview.pro.ant.design/list/table-list 
+        后台人员提供的端口：http://134.175.154.93:6677/swagger-ui.html#/
+
+        刘亚蓉： 邮箱
+
+github
+    GitHub账户：PanShiQuan
+    创建仓库：【PZQ_briup】https://github.com/PanShiQuan/PZQ_briup.git
+    //老师仓库：https://github.com/liuyrSilence/gx-briup.git
+
+    远程仓库： GitHub的仓库
+    本地缓存： 暂存的文件
+    本地仓库： 本地的文件
+
+    想把远程仓库的代码复制下来
+        1.直接下载压缩包
+        2.git clone git地址(https://github.com/PanShiQuan/PZQ_briup.git)
+    
+    本地仓库查找文件
+        dir
+    
+    上传到远程仓库
+        git add *  //将当前修改的文件添加到上传列表,git add 文件名（文件名不能为中文），如何修改可以中文文件提交：https://www.jianshu.com/p/94de8ec6a186
+        git commit -m '描述'  //提交到本地缓存中
+        git push origin master（主分支）  //将本地缓存中文件推送到远程仓库中
+
+    更新
+        远程仓库代码发生更改
+            git pull origin master
+
+    终端打开快捷方式：Ctrl + Shift + ~
+
+    更多命令行
+        https://www.yiibai.com/git/git_add.html
+
+    任务：
+        提交自己的文件夹
+        Apache部署项目
+    技术：
+    highcharts/echarts技术：用于图表
+
+    部署项目
+        1.启动Apache

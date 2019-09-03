@@ -1,0 +1,215 @@
+day01
+	个人介绍
+	1.填写分组表：链接：https://docs.qq.com/sheet/DQmFoV2NhZ1piWk9t?tab=BB08J2&c=F6A0A0
+	2.注册github账户：https://github.com/
+	3.安装git客户端： http://git-scm.com/download/win
+	4.安装apache静态服务器：http://httpd.apache.org/download.cgi
+	5.安装NodeJS：https://nodejs.org/en/download/
+	6.安装vscode：https://vscode.en.softonic.com
+	✔️7.谷歌浏览器
+	✔️8.火狐浏览器
+	扩展：安装金山打字通，练打字速度
+
+
+
+Servlet  JSP
+实训
+
+	HTML5
+	CSS3
+	JavaScript   js   网页和服务器代码
+		Java   Python    C++  PHP
+		前端与后台与数据库
+
+	前端三大框架，AngularJS、Vue、React
+	后台三大框架，SSM、SSH
+						SSM:	Spring  SpringMVC  MyBatis    Spring生态圈
+						SSH: Spring  Struts2 Hibernate
+
+
+
+
+
+云服务器(Linux系统命令  )
+
+HTML4   HTML5
+
+HTML5
+CSS3       Less  Sass
+JavaScript(ECMAScript,DOM,BOM)/Ajax    TypeScript
+jQuery      JS库
+BootStrap    HTML+CSS+JS静态框架
+HTML5API  HTML5的JS的API    H5小游戏   WebGL   C#
+ES6   *    ECMAScript6版本
+React 组件 /Vue  /AngularJS
+React生态圈(Ant Design、Axios、redux、redux-saga   dva/antd pro)  /Vue生态圈 /AngularJS生态圈
+NodeJS   运行在服务器端的JS代码
+React-native/weex
+微信小程序   微信小程序框架
+
+Win+r    cmd   回车   终端
+
+前后端分离技术
+	swagger
+
+
+Apache24   C:/
+进入bin目录，httpd.exe  菜单栏【查看】->显示扩展名   test.html   test.css
+
+浏览器地址栏
+Apache闪退(c盘下的Apache24)
+	1.80端口占用
+		更改conf->httpd.conf文件，将80全文替换为8080
+	2.443端口占用
+		更改extra->httpd-ssl.conf和httpd-ahssl.conf。将内部的443替换为442
+	3.bin->httpd.exe，双击
+	在浏览器器地址栏输入localhost:端口号 回车
+
+NodeJS	
+	cmd命令行输入 node -v
+git
+	cmd命令行输入 git --version
+
+vscode
+	打开软件，
+
+
+杰普公司   briup
+	刘亚蓉   前端方向老师
+
+	liuyr@briup.com
+	904105440@qq.com
+
+
+
+VSCode安装插件
+	1.vscode icons
+	2.Auto Close Tag
+	3.Auto Complete Tag
+	4.Auto Complete Tag
+	5.Chinese (Simplified) Language Pack for Visual Studio Code
+	6.HTML CSS Support
+	7.open in browser
+	8.Path Intellisense
+
+github
+	协同开发
+目标：	
+	github上创建仓库，同学们把这个仓库拉取下来。创建自己的名字.txt文件，上传到github。
+
+	github账户
+	git客户端   git.exe
+		cmd  git --version
+创建仓库
+
+远程仓库   github的仓库
+本地缓存   暂存的文件
+本地仓库   本地的文件夹   
+
+
+想把远程仓库的代码复制下来  
+	1.直接下载压缩包
+	2.git clone git地址
+
+上传
+	git add *       将当前修改的文件添加到上传列表
+	git commit -m '刘亚蓉提交'   提交到本地缓存中
+		git config --global user.email "you@example.com"
+  	git config --global user.name "Your Name"
+	git push origin master 将本地缓存中文件推送到远程仓库中
+
+更新
+	远程仓库代码发生改变，本地代码需要更新
+	git pull origin master
+
+
+自己创建远程仓库，让别人操作
+
+github   		开源的
+svn 小乌龟   局域网内使用svn
+
+
+
+
+
+
+码云   
+
+项目部署
+	apache24  静态服务器  
+	将要部署的项目复制到htdocs底下就可以，访问形式变为ip地址:端口号/路径/文件名
+		106.52.23.167:80/hello.html
+		127.0.0.1:8080/hello.html
+		localhost:8080/hello.html
+部署项目
+	1.先启动apache
+		c:/Apache24/bin/httpd.exe 
+	2.编写文件
+	3.部署项目
+		localhost:80     c:/Apache24/htdocs文件夹  index.html index.htm
+		localhost:80/index.html
+		localhost:80/hello.html
+		localhost:80/test/hello.html
+
+html  结构   素颜的脸 
+css   样式   化妆
+js    动作   会说话，会笑
+
+html  标记语言
+	http协议
+	常用标签
+		div
+		span
+		table  tr td th
+		form  input  type="radio"
+				get  post
+	常用属性
+		id
+		class
+		title
+		style
+		name  
+CSS
+	选择器
+	基础样式
+		background  背景
+		font-size   文本大小
+		cursor   鼠标样式
+		color  文本颜色
+	布局
+		盒子模型
+		弹性盒布局 flex
+		浮动
+		定位
+=====================
+day02	
+html  标记语言
+	http协议
+	常用标签
+		div
+		span
+		table  tr td th
+		form  input  type="radio"
+				get  post
+	常用属性
+		id
+		class
+		title
+		style
+		name  
+CSS
+	选择器
+	基础样式
+		background  背景
+		font-size   文本大小
+		cursor   鼠标样式
+		color  文本颜色
+	布局
+		盒子模型
+		弹性盒布局 flex
+		浮动
+		定位
+		
+
+
+

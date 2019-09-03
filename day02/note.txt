@@ -1,0 +1,50 @@
+==========上午=========
+一、任务
+    1、修改vscode默认浏览器【完成】
+    2、form的action/method属性【完成】
+        a、必需的 action 属性规定当提交表单时，向何处发送表单数据。
+            绝对 URL - 指向其他站点（比如 src="www.example.com/example.htm"）
+            相对 URL - 指向站点内的文件（比如 src="example.htm"）
+
+        b、method 属性规定如何发送表单数据（表单数据发送到 action 属性所规定的页面）。
+           表单数据可以作为 URL 变量（method="get"）或者 HTTP post （method="post"）
+           的方式来送。
+
+    3、命名中文翻译成英文【完成】
+
+二、知识点
+    1、行内元素、块级元素：span/div
+        属性：display：block/inline-block
+
+    2、盒子模型
+        content/padding/border/margin
+
+    3、列表
+        ul/ol
+
+    4、弹性盒模型
+        flex
+
+    5、浮动
+        float
+        清除浮动：clear: both; //清除我上面的浮动
+三、资源
+    1、牛客网：
+        内容：面试题刷题
+        网址：
+        【官网】https://www.nowcoder.com/
+        【剑指offer】https://www.nowcoder.com/ta/coding-interviews?page=1  
+
+    2、更多插件
+        网址：https://blog.csdn.net/maixiaochai/article/details/90767129
+        命名翻译插件：var translation
+
+
+===========下午============
+    一、任务
+        1、整理快捷键
+        2、整理插件
+
+    二、知识点
+        1、终端运行js文件命令：
+            node +文件名
