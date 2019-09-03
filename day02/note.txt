@@ -43,8 +43,76 @@
 ===========下午============
     一、任务
         1、整理快捷键
+            进入终端：Ctrl + ~
+
+            浏览器打开：
+                默认浏览器打开：Alt + B
+                其他浏览器打开：Alt + Shift + B
+
+            内容选中后，同时选中相同的下一个内容：Ctrl + D
+
+            编辑器切换浏览器：Alt + Tab  /  window + Tab
+
+            下一行：Ctrl + Enter
+
+            复制本行到下一行：不操作鼠标，直接Ctrl + C 然后 Ctrl + V
+
         2、整理插件
 
     二、知识点
         1、终端运行js文件命令：
             node +文件名
+
+        2、数据类型
+            number/string/boolean/null/undefied/
+
+        3、对象
+        4、函数
+        5、数组
+        6、事件
+            DOM DocumentObjectModel
+            表单的事件
+                change事件
+
+
+===========晚上===============
+一、任务
+二、知识点
+三、资源
+    1、老师的settings.json
+        "extensions.ignoreRecommendations": false,
+        "window.zoomLevel": 1,
+        "editor.fontSize": 26,
+        "editor.wordWrap": "on",
+        "workbench.statusBar.visible": true,
+        "workbench.activityBar.visible": true,
+        "explorer.confirmDelete": false,
+        "editor.tabSize": 2,
+        "emmet.triggerExpansionOnTab": true,
+        "emmet.includeLanguages": {
+            "javascript": "javascriptreact"
+        },
+        "emmet.syntaxProfiles": { 
+            "javascript": "jsx"
+        },
+        "editor.mouseWheelZoom": true,
+        "breadcrumbs.enabled": true,
+        "files.autoSave":"off",
+        "eslint.validate": [
+            "javascript",
+            "javascriptreact",
+            "html",
+            { "language": "vue", "autoFix": true }
+        ],
+        "eslint.options": {
+            "plugins": ["html"]
+        },
+        "workbench.colorTheme": "Visual Studio Light",
+        "workbench.iconTheme": "vscode-icons",
+        "vsicons.dontShowNewVersionMessage": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "git.decorations.enabled": false,
+        "debug.console.fontSize": 20,
+        "terminal.integrated.fontSize": 20,
+        "terminal.integrated.shell.osx": "/bin/bash"

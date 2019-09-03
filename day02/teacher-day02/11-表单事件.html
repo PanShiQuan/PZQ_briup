@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单事件</title>
+  <script>
+    window.onload = function () {
+      // 获取DOM节点
+      let btn = document.getElementById('btn');
+      let inputU = document.getElementById('username');
+      let select = document.getElementsByTagName('select')[0];
+      let inputGs = document.getElementsByClassName('gender');
+      // console.log(inputGs);
+      // 类数组转成数组
+      let inputGsArr = Array.from(inputGs);
+      // console.log(inputGsArr);
+      /* console.log(inputGs[0].checked);
+      console.log(inputGs[1].checked); */
+
+      let inputHs = document.getElementsByClassName('hobby');
+      let inputHsArr = Array.from(inputHs);
+      btn.onclick = function () {
+        // 获取用户名
+        console.log(inputU.value);
+        // 获取籍贯
+        console.log(select.value);
+        // 获取用户的性别
+        // filter是数组的方法，过滤出来符合条件的元素，返回新数组
+        let genderResult = inputGsArr.filter(function (item, index) {
+          // item就是每一个数组元素
+          return item.checked === true;
+        });
+        // genderResult是用户选中的性别的input
+        console.log(genderResult[0].value);
+
+        let hobbyResult = inputHsArr.filter(function (item, index) {
+          return item.checked === true;
+        });
+        // hobbyResult是用户选中的爱好的input
+        // console.log(hobbyResult);
+        // map是映射数组中的某部分数据
+        /* [{name:'',class:''}, { name: '', class: '' }, { name: '', class: '' }] */
+        let hobbyValue = hobbyResult.map(function (item) {
+          return item.value;
+        });
+        // hobbyValue是用户爱好的数组
+        // join将数组中的元素使用特殊的符号连接，返回字符串
+        //[1,2,3]    1&2&3
+
+        console.log(hobbyValue.join('||'));
+
+        /* 1==1   true
+        1===1  true
+        1=='1'  true
+        1==='1'  false */
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form action="">
+    用户名：<input id="username" type="text" placeholder="请输入您的用户名">
+    <br>
+    性别：<input class="gender" type="radio" name="gender" value="male"> 男
+    <input class="gender" type="radio" name="gender" checked value="female">女
+    <br>
+    爱好：<input class="hobby" checked type="checkbox" name="hobby" value="basketball">篮球
+    <input class="hobby" type="checkbox" name="hobby" value="singing">唱歌
+    <input class="hobby" type="checkbox" name="hobby" value="dancing">跳舞
+    <br>
+    籍贯：<select name="" id="">
+      <option value="">请选择</option>
+      <option value="shanghai">上海</option>
+      <option value="liuzhou">柳州</option>
+      <option value="taiyuan">太原</option>
+    </select>
+  </form>
+  <button id="btn">获取数据</button>
+</body>
+
+</html>

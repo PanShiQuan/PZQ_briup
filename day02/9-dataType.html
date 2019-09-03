@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据类型</title>
+    <script>
+        //引用数据类型
+        var obj = {
+            name: "zhengsan",
+            age: 12
+        };
+        console.log(obj);
+
+        //数组
+        let arr = [1, 'hello', true, { name: 'zhengsan' }, [1, 2, 3]];
+        console.log(arr);
+
+        //函数  a,b形参
+        function test(a,b){
+            console.log(1);
+            console.log(2);
+            console.log(3);
+            //this指向函数的调用者对象
+            console.log(this);
+        }
+
+        //函数的运行
+        test();
+
+        //对象内方法 
+        let obj2={
+            name:'lisi',
+            age:12,
+            gender:'男',
+            test:function(){
+                console.log(1);
+                console.log(2);
+            }
+        }
+
+        //属性访问
+        console.log(obj2.name);
+        console.log(obj2['name']);
+
+        //方法访问
+        console.log(obj2.test());
+
+        //函数作为返回值存在
+        function test2(a,b){
+            console.log(a,b);
+
+            return function(){
+                console.log(200);
+            }
+        }
+        //1，2是实参
+        test2(1,2);
+
+        //数据类型自动转换
+        console.log(1+ture);//2
+        console.log(1+'true');//1true
+        console.log(1+'1');//11
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

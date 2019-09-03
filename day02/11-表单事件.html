@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            //获取btn
+            let btn =document.getElementById('btn');
+            let inputU =document.getElementById('username');
+            let select=document.getElementsByTagName('select')[0];
+            let inputGs=document.getElementsByClassName('gender');
+            let inputHs=document.getElementsByClassName('hobby');
+            //类数组转成数组
+            let inputGsArr=Array.from(inputGs);
+            btn.onclick=function(){
+                //获取用户名
+                console.log(inputU.value);
+
+                //获取用户的性别，filter是数组的方法，过滤出来符合条件的元素，返回新数组
+                let genderResult = inputGsArr.filter(function (item, index) {
+                    //item就是每一个数组元素
+                    return item.checked === true;
+                })
+                // console.log(genderResult[0].value);
+                 
+                //获取籍贯
+                console.log(select.value);
+               
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        用户名：<input id="username" type="text" placeholder="请输入您的用户名">
+        <br>
+        姓名：
+        <input class="gender" type="radio" name="sex" value="male" checked>男
+        <input class="gender" type="radio" name="sex" value="female">女
+        <br>
+        爱好：
+        <input type="checkbox" name="hobby" value="basketball" checked>篮球
+        <input type="checkbox" name="hobby" value="singing">唱歌
+        <input type="checkbox" name="hobby" value="dancing">跳舞
+        <br>
+        籍贯：<select name="" id="">
+            <option value="">请选择</option>
+            <option value="上海">上海</option>
+            <option value="柳州">柳州</option>
+            <option value="太原">太原</option>
+        </select>
+    </form>
+    <button id="btn">提交</button>
+</body>
+</html>
