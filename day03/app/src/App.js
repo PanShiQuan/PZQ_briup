@@ -1,9 +1,18 @@
 import React from 'react';
 import './App.css';
+import MyIf from './components/1-if';
+import MyClass from './components/2-class';
+import MyFunctionComponent from './components/test-1-if'
 const PI=3.14;
 function App() {
   return (
-    <div>hello{PI}</div>
+    <div>
+      hello{PI}
+      {/* 组件的使用 stu="test"是APP给子组件的参数 */}
+      <MyIf stu="test" arr={[1,2,3,4]} obj={{name:'zhengsan',age:12}}></MyIf>
+      <MyClass sut="test"></MyClass>
+      <MyFunctionComponent stu='test' arr={[1, 2, 5]} obj={{ name: '潘峥全', age: 12}}></MyFunctionComponent>
+    </div>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

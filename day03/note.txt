@@ -40,3 +40,12 @@
 
 三、资源
     1、react官网：https://react.docschina.org/docs/state-and-lifecycle.html
+
+
+==========晚上=========
+一、任务
+    1、类组件【2-class.jsx】
+
+二、知识点
+    1、函数组件
+    2、类组件
