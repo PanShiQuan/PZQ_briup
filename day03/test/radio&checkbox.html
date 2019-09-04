@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单选&复选按钮结果获取</title>
+    <script>
+        window.onload=function(){
+            let btn=document.getElementsByTagName('button')[0];
+            let genderInput=document.getElementsByClassName('sex');
+            let genderArr=Array.from(genderInput);
+            let hobbyInput=document.getElementsByClassName('hobby');
+            let hobbyArr=Array.from(hobbyInput);
+           btn.onclick=function(){
+               let genderResult = genderArr.filter(function (item) {
+                   return item.checked === true;
+               })
+               console.log(genderResult[0].value);
+               let hobbyResult= hobbyArr.map(function(item){
+                   return item.true;
+               })
+               console.log(hobbyResult.value.join('||'));
+           }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        性别：
+        <input class="sex" name="gender" type="radio" value="male" checked>男
+        <input class="sex" name="gender" type="radio" value="female">女
+        <br>
+        爱好：
+        <input class="hobby" name="hobby" type="checkbox" value="basketball" checked>篮球
+        <input class="hobby" name="hobby" type="checkbox" value="singing">唱歌
+        <input class="hobby" name="hobby" type="checkbox" value="dancing">跳舞
+    </form>
+    <button>提交</button>
+</body>
+
+</html>

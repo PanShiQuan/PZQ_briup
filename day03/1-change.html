@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //监听input的change事件
+        window.onload=function(){
+            let input=document.getElementById('input');
+            let select=docuent.getElementById('select');
+            input.onchange=function(event){
+                console.log(event.target.value);
+            }
+            select.onchange=function(event){
+                console.log(event.target.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="input">
+    <select name="" id="select">
+        <option value="上海">上海</option>
+        <option value="柳州">柳州</option>
+    </select>
+</body>
+</html>
