@@ -7,7 +7,7 @@ class MyClass extends React.Component{
     constructor(props){
         super(props)
     }
-    //render 用来返回模板
+    //render 方法用来返回模板
     render(){
         return (
             <div>
