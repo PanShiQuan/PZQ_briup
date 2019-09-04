@@ -18,10 +18,13 @@
                    return item.checked === true;
                })
                console.log(genderResult[0].value);
-               let hobbyResult= hobbyArr.map(function(item){
-                   return item.true;
+               let hobbyResult= hobbyArr.filter(function(item,index){
+                   return item.checked===true;
                })
-               console.log(hobbyResult.value.join('||'));
+               let hobbyValue= hobbyResult.map(function(item){
+                    return item.value;
+               })
+               console.log(hobbyValue.join("||"));
            }
         }
     </script>
