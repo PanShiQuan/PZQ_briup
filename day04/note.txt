@@ -21,10 +21,26 @@
 
     6、事件绑定
     
-    4、组件的生命周期
+
 
 三、资源
     1、react插件安装
         1）、Simple React Snippets
         2）、React/Redux/react-router Snippets
         3）、React Redux ES6 Snippets
+=============下午============
+一、任务
+二、知识点
+    1、表单数据的双向绑定
+
+    2、组件的生命周期
+        //钩子函数
+        componentDidMount(){} 
+        在组件挂载完毕之后，会调用componentDidMount钩子函数去获取后台的数据
+
+    3、在...>app 下安装axios
+        命令：cnpm install --save axios
+
+三、资源
+        1、后台接口：
+            http://47.106.244.1:6677/swagger-ui.html

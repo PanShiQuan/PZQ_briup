@@ -18,18 +18,16 @@ export default class MyState extends Component {
     render () {
         const {isLogin,msg,arr}=this.state;
         return (
-            <div>
-                hello{msg}
-                {/* 条件渲染 */}
-                {/* 三目运算符 */}
-                {isLogin?<div>欢迎您！</div>:<div>请登录</div>}
-                {/* 列表渲染 */}
-                {
-                    arr.map((item)=>{
-                        return <div>{item}</div>
-                    })
-                }
-            </div>
+          <div>
+            hello{msg}
+            {/* 条件渲染 */}
+            {/* 三目运算符 */}
+            {isLogin ? <div>欢迎您！</div> : <div>请登录</div>}
+            {/* 列表渲染 */}
+            {arr.map((item, index) => {
+              return <div key={index}>{item}</div>;
+            })}
+          </div>
         );
     }
 }

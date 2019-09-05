@@ -6,6 +6,8 @@ import MyFunctionComponent from "./components/test-1-if";
 import MyClassComponent from "./components/test-2-class";
 import MyState from "./components/day04/1-State";
 import MyEvent from "./components/day04//2-MyEvent";
+import MyForm from "./components/day04/3-MyForm";
+import Live from "./components/day04/4-Live";
 
 const PI = 3.14;
 function App() {
@@ -30,6 +32,10 @@ function App() {
       <MyState></MyState>
       =======2-MyEvent.jsx========
       <MyEvent></MyEvent>
+      =======3-MyForm.jsx=========
+      <MyForm></MyForm>
+      =======4-Live.jsx===========
+      <Live></Live>
     </div>
     // <div className="App">
     //   <header className="App-header">

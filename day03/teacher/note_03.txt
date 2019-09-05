@@ -1,0 +1,215 @@
+JS
+ECMAScript
+数据类型，对象，数组，函数
+DOM
+对文档节点的操作
+div
+input
+<input type="text">
+获取节点
+document.getElementById('')通过id属性的值获取元素
+document.getElementsByTagName('input'); 通过标签名获取元素
+document.getElementsByClassName('one'); 通过class属性的值来获取元素
+只有获取到DOM节点，然后才能进行事件的绑定和元素属性的获取。
+<input id="one" type="text" value="123">
+单选按钮值的获取比较复杂
+  1.获取单选按钮组
+    let genderInputs = document.getElementsByClassName('gender');
+    gender是一个类数组 genderInputs
+  2.过滤用户选中的单选按钮
+    需要通过DOM的checked属性去判断是否选中
+    过滤使用数组的filter方法
+    let genderArr = Array.from(genderInputs);
+    let result = genderArr.filter(function(item){
+      //item-->radio的input
+      return item.checked===true;
+    });
+    //result 就是过滤出来的用户选择的radio
+
+
+
+
+    /*
+    let arr = [1,2,3,4,5];
+    过滤出大于3的元素，返回新数组
+    let result = arr.filter(function(item,index,arr){
+      //item-->数组内的每一个元素
+      return item>3;
+    });
+    [4,5]
+    //[1,2,3,4,5]
+    let result = [];
+    for(let i=0;i<arr.length;i++){
+      console.log(arr[i]);
+      if(arr[i]>3){
+        //在数组的末尾添加一个元素
+        result.push(arr[i]);
+      }
+    }*/
+  3.获取对应的value值
+    result[0].value
+  复选按钮值的获取比较复杂
+
+
+BOM
+  alert(1)
+
+ES6
+  箭头函数
+    let test = ()=>{}
+    function test(){}
+  let var   
+    var a = 1;
+    var a = 2;
+    console.log(2);
+    let a = 1;
+    let a = 2;  //不被允许的，let不能重复声明变量
+  const 常量
+    let a = 1;
+    a = 2;
+
+    const b = 1;        
+    b = 2;  //不被允许的
+
+  Promise   
+  Generator
+  异步
+    安排两个任务给两个人。分开执行。谁先完成不一定。
+    异步数据交互  ajax的应用这边
+      xml
+        <student>
+          <name>zhangsan</name>
+          <age>12</age>
+        </student>
+        student
+        {name:'zhangsan',
+        age:12}
+      json字符串  数据格式
+        '{
+          "name":"zhangsan",
+          "age":12
+        }'
+      js---对象--json--java
+      java---对象-json--js
+
+
+      JSON.parse(jsonStr); 将json转成js对象
+      JSON.stringify(jsObj);  将JS的对象转成json字符串
+
+      可以使用json数据格式进行数据交换。
+      还可以使用表单格式的数据进行数据交换。
+        后台：接受的数据要求表单格式的数据
+          给的json格式的数据
+
+        前端：给的数据表单格式的数据  qs
+              qs.stringify(jsObj);  post
+                form  action  method
+                //获取表单控件的value值
+                {
+                  name:inputValue,
+                  gender:genderValue,
+                  hobby:hobbyValue,
+                  address:addressValue
+                }
+
+              表单格式的数据      get
+          接受json格式的数据  Ant design
+
+    ajax
+      JS原生
+      jQuery的ajax
+      axios  ajax+promise
+      ...
+
+      axios.js
+      axios.get('url',{params:obj}).then((res)=>{
+        //res.data是后台给的数据
+      }).catch((err)=>{
+        console.log(err);
+      });
+      axios.post('url',obj).then((res)=>{
+        //res.data是后台给的数据
+      }).catch((err)=>{
+        console.log(err);
+      });
+
+      es6 Generator  延迟执行的函数，分段执行 
+        function* test(){
+          console.log(1);
+          yield 1;
+          console.log();
+          yield 2;
+          console.log();
+          yield 3;
+          console.log();
+          return 4;
+        }
+        g是一个generator对象
+        let g = test();
+        g.next();   //执行一次，见到yield就停止  {value:1,done:true/false}
+
+        function test(){
+          return 1;
+          console.log(1);
+        }
+        test();
+
+
+  同步
+    安排两个任务给同一个人。先把第一个任务做完再去做第二个任务。一个一个来。
+    console.log(1);
+    console.log(2);
+
+React框架
+  平台  集成React一系列的生态圈
+  安装
+
+创建react应用
+  1.安装create-react-app
+    NodeJS的包管理工具  npm可以下载需要的资源
+    安装cnpm  yarn 
+    使用npm安装cnpm/yarn
+      npm install -g cnpm  
+
+      npm install -g cnpm --registry https://registry.npm.taobao.org
+      npm install -g yarn --registry https://registry.npm.taobao.org
+  2.创建项目
+    安装create-react-app 脚手架
+      cnpm install -g create-react-app
+      create-react-app app
+  3.启动项目
+    cd app
+    yarn/cnpm/npm start
+
+更改npm的镜像为淘宝镜像
+npm config set registry https://registry.npm.taobao.org 
+
+
+NodeJS写的服务器
+webpack打包工具   模块化开发
+  打包操作 npm run build
+react框架
+
+第三方包：
+  1.生产阶段的依赖（开发）
+  2.产品阶段的依赖（上线）
+
+axios 数据交互
+  安装依赖
+    -g全局安装，工具包进行全局安装
+    没有-g 局部安装，当前文件夹底下安装
+    --save  安装产品阶段的依赖
+    --save-dev 安装开发阶段的依赖
+
+  cnpm install 安装项目所有的依赖。
+
+    cnpm install --save axios
+
+
+
+
+
+
+
+
+
