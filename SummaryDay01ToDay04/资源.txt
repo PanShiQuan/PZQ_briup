@@ -1,0 +1,17 @@
+=========day01==========
+    一、刘亚萍老师邮箱
+        liuyr@briup.com
+	    904105440@qq.com
+
+    二、智慧校园-E洁家政服务平台后台人员提供的端口：
+        http://134.175.154.93:6677/swagger-ui.html#/
+
+    三、图表技术：
+        highcharts（图表为欧美风格，色彩偏亮色）
+            官网：https://www.highcharts.com.cn/
+        
+        echarts（图表为中国风格，色彩偏暗色）
+            官网：https://www.echartsjs.com/zh/index.html
+=========day02==========
+=========day03==========
+=========day04==========

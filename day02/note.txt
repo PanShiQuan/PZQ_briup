@@ -24,6 +24,9 @@
 
     4、弹性盒模型
         flex
+        更多学习：
+        https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis
+        https://www.runoob.com/w3cnote/flex-grammar.html
 
     5、浮动
         float

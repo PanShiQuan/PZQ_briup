@@ -59,9 +59,9 @@ Apache24   C:/
 浏览器地址栏
 Apache闪退(c盘下的Apache24)
 	1.80端口占用
-		更改conf->httpd.conf文件，将80全文替换为8080
+		更改C:\Apache24\conf\httpd.conf文件，将80全文替换为8080
 	2.443端口占用
-		更改extra->httpd-ssl.conf和httpd-ahssl.conf。将内部的443替换为442
+		更改C:\Apache24\conf\extra\httpd-ssl.conf和httpd-ahssl.conf。将内部的443替换为442
 	3.bin->httpd.exe，双击
 	在浏览器器地址栏输入localhost:端口号 回车
 
