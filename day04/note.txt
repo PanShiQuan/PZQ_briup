@@ -1,0 +1,30 @@
+一、任务
+    1、插件，符号有颜色【完成】
+        Bracket Pair Colorizer
+二、知识点
+    1、ES6中的解构
+        对象解构
+        数组解构
+    2、ES6中对象的扩展
+        let defaultFun =(a,b)=>{
+            //a=1,b=undefite;
+        }
+        defaultFun(1);
+    3、类组件的状态
+        1）、state状态管理
+        2）、
+
+    4、扩展运算符
+        ...
+
+    5、条件渲染、列表渲染
+
+    6、事件绑定
+    
+    4、组件的生命周期
+
+三、资源
+    1、react插件安装
+        1）、Simple React Snippets
+        2）、React/Redux/react-router Snippets
+        3）、React Redux ES6 Snippets

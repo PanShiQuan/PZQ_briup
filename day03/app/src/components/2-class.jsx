@@ -4,9 +4,9 @@ import React from 'react';
  * es6 class
  */
 class MyClass extends React.Component{
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
     //render 方法用来返回模板
     render(){
         return (
