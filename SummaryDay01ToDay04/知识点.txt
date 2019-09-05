@@ -1,0 +1,80 @@
+=========day01=========
+    一、前端所学知识简述
+        HTML5
+        CSS3
+        JavaScript
+        jQuery
+        BootStrap
+        HTML5API    H5小游戏 WEbGL  C#
+        ES6  *  
+        React   /Vue  /AngularJS
+
+        React生态圈（react之上的框架：Ant design/Ant Design Pro(取之能用的网页：https://preview.pro.ant.design/list/table-list) ） /Vue生态圈 /angularJ生态圈
+
+        NodeJS   
+        React-native   /weex
+        微信小程序    微信小程序框架
+        /////////////////框架////////////////
+            前端三大框架：angularJs、Vue（容易）、react（难）、
+            后台三大框架：SSM（最近流行）：spring  springMVC Mybatic
+                         SSH
+        //////////////前后端连接/////////////
+            前后端代码分离技术：servlet+JSP  后端提供接口，前端提供Ajax  前端基于HTTP协议向后台发送数据交互请求，后台接收请求后进行响应。
+            后台访问数据库工具：Oracle   MySQl   SQL Server   mongodb 
+        
+    二、GitHub
+
+        1、定义：
+            远程仓库： GitHub的仓库
+            本地缓存： 暂存的文件
+            本地仓库： 本地的文件
+
+        2、创建GitHub账户：
+            PanShiQuan
+
+        3、创建仓库：
+            【PZQ_briup】https://github.com/PanShiQuan/PZQ_briup.git
+            //刘亚萍老师仓库：https://github.com/liuyrSilence/gx-briup.git
+
+        4、克隆远程仓库：
+            git clone 仓库地址
+            （仓库地址：https://github.com/PanShiQuan/PZQ_briup.git）
+
+        5、查找本地文件：
+            dir
+
+        6、本地文件上传远程仓库：
+            步骤一：git add *
+                    //将当前修改的文件添加到上传列表,git add 文件名（文件名不能为中文），如何修改可以中文文件提交方法：https:/www.jianshu.com/p/94de8ec6a186
+
+            步骤二：git commit -m '操作描述'
+                    //将本地文件提交到本地缓存
+
+            步骤三：git push origin master
+                    //将本地缓存中文件推送到远程仓库中
+                    //其中master为主分支，也可上传到其他子分支
+
+        7、更新本地仓库代码：
+            git pull origin master
+            //更新原因：远程仓库代码发生更改
+
+        8、更多命令行
+            易百教程：https://www.yiibai.com/git/git_add.html
+
+    三、Apache安装
+        1、解压安装包
+        2、将解压后的Apache24文件夹放置C盘根目录下，即：C:\Apache24
+        3、启动：
+            双击C:\Apache24\bin 目录下的 httpd.exe 文件
+
+        4、启动后出现一个无法操作的命令窗口，使用Apache时不可关闭该命令窗口；
+            运行网址：localhost：端口（默认80端口，如修改了端口号，则为修改后的端口号）；
+
+        5、服务器端文件存放位置：C:\Apache24\htdocs
+            浏览器访问地址为，例：localhost/index.html
+
+        、双击 httpd.exe 命令窗口闪退处理办法：
+            1）、80
+=========day02=========
+=========day03=========
+=========day04=========

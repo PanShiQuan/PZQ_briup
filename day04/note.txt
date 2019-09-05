@@ -1,5 +1,5 @@
 一、任务
-    1、插件，符号有颜色【完成】
+    1、令符号有颜色分组的vscode插件查找【完成】
         Bracket Pair Colorizer
 二、知识点
     1、ES6中的解构

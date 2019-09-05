@@ -10,7 +10,7 @@
           CSS3
           JavaScript
           jQuery
-BootStrap
+          BootStrap
           HTML5API    H5小游戏 WEbGL  C#
           ES6  *  
           React    /Vue  /AngularJS
@@ -24,7 +24,7 @@ BootStrap
         后台访问数据库工具：Oracle   MySQl   SQL Server   mongodb    
     
         取之能用的网页：  https://preview.pro.ant.design/list/table-list 
-        后台人员提供的端口：http://134.175.154.93:6677/swagger-ui.html#/
+        智慧校园-E洁家政服务平台后台人员提供的端口：http://134.175.154.93:6677/swagger-ui.html#/
 
         刘亚蓉： 邮箱
 

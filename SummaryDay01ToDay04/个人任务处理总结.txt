@@ -1,9 +1,57 @@
 ===========day01============
     1、提交自己的文件夹【完成】
     2、Apache部署项目【完成】
-
-
 ===========day02============
+    3、修改vscode默认浏览器【完成】
+    4、form的action/method属性了解【完成】
+        a、必需的 action 属性规定当提交表单时，向何处发送表单数据。
+            绝对 URL - 指向其他站点（比如 src="www.example.com/example.htm"）
+            相对 URL - 指向站点内的文件（比如 src="example.htm"）
 
+        b、method 属性规定如何发送表单数据（表单数据发送到 action 属性所规定的页面）。
+           表单数据可以作为 URL 变量（method="get"）或者 HTTP post （method="post"）
+           的方式来送。
+
+    5、查找命名中文翻译成英文的vscode插件【完成】
+            var-translation
+
+    
+    6、整理快捷键【更新中】
+            进入终端：Ctrl + ~
+
+            浏览器打开：
+                默认浏览器打开：Alt + B
+                其他浏览器打开：Alt + Shift + B
+
+            内容选中后，同时选中相同的下一个内容：Ctrl + D
+
+            编辑器切换浏览器：Alt + Tab  /  window + Tab
+
+            下一行：Ctrl + Enter
+
+            复制本行到下一行：不操作鼠标，直接Ctrl + C 然后 Ctrl + V
+
+    7、整理插件
 ===========day03============
+    8、类数组的含义【完成】
+        1）拥有length属性，其它属性（索引）为非负整数（对象中的索引会被当做字符串来处理）;
+        2）不具有数组所具有的方法；
+        类数组是一个普通对象，而真实的数组是Array类型。
+        常见的类数组有: 函数的参数 arguments, DOM 对象列表(比如通过 document.querySelectorAll 得到的列表), jQuery 对象 (比如 $(“div”)).
+        类数组可以转换为数组:
+        //第一种方法
+        Array.prototype.slice.call(arrayLike, start);
+        //第二种方法
+        [...arrayLike];
+        //第三种方法:
+        Array.from(arrayLike);
+        PS: 任何定义了遍历器（Iterator）接口的对象，都可以用扩展运算符转为真正的数组。
+        Array.from方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象。
+        来源：https://www.cnblogs.com/nini123123/p/10996972.html
+
+    9、复选框错误修改【完成】
+    10、onChange事件错误修改【完成】
+    11、类组件（2-class.jsx）错误修改【完成】
 ===========day04============
+    12、令符号有颜色分组的vscode插件查找【完成】
+        Bracket Pair Colorizer
